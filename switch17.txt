@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+  int ch:
+  float p,r,t si,ci;
+printf("1.simple intrest\n2.compound intrest\n");
+scanf("%d",&ch);
+printf("enter principal ,rate and time");
+scanf("%f%f%f",&p,&r,&t);
+switch(ch){
+case1:
+  si=(p*r*t)/100;
+  printf("simpleintrest=%.2f\n",si);
+break;
+case2:
+  ci=p*(pow((1+r/100),t))-p;
+  printf("compound intrest=%2f\n",ci);
+break;
+default:
+  printf("invalid choice!\n");
+]
+return 0;
+}
